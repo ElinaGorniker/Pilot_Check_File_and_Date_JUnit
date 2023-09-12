@@ -1,8 +1,12 @@
+import org.example.ConfProperties;
 import org.example.ScreenshotHelper;
 import org.example.WebDriverManager;
 import org.junit.AfterClass;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -16,18 +20,17 @@ public class Tests {
 
     private static WebDriver driver;
 
+
     @BeforeEach
     public void setUp() {
 
         driver = WebDriverManager.getDriver();
-
-
-        driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
-
+        driver.get(ConfProperties.getProperty("ordner"));
     }
 
+
     @Test
-    public void testFileCreationDateFile1() throws InterruptedException {
+    public void testFileCreationDateFile1()  {
         String testName = "testFileCreationDateFile1";
         // driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String targetFileName = "TestFenster1.txt";
@@ -37,6 +40,7 @@ public class Tests {
         try {
             pilot_file = driver.findElement(By.linkText(targetFileName));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("File " + targetFileName + " wurde nicht gefunden");
             return;
         }
@@ -45,6 +49,7 @@ public class Tests {
         try {
             fileRow = driver.findElement(By.xpath("//tr/td[@data-value='" + targetFileName + "']"));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileRow wurde nicht gefunden");
             return;
         }
@@ -53,6 +58,7 @@ public class Tests {
         try {
             fileCreationDateElement = driver.findElement(By.xpath("//td[contains(@data-value, '" + pilot_file.getText() + "')]/following-sibling::td[@class='detailsColumn'][2]"));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileCreationDateElement wurde nicht gefunden");
             return;
         }
@@ -61,9 +67,8 @@ public class Tests {
         assertNotNull(fileCreationDate);
         assertEquals(expectedCreationDate, fileCreationDate);
     }
-
     @Test
-    public void testFileCreationDateFile2() throws InterruptedException {
+    public void testFileCreationDateFile2()  {
         //driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String testName = "testFileCreationDateFile2";
 
@@ -74,6 +79,7 @@ public class Tests {
         try {
             pilot_file = driver.findElement(By.linkText(targetFileName));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("File " + targetFileName + " wurde nicht gefunden");
             return;
         }
@@ -82,6 +88,7 @@ public class Tests {
         try {
             fileRow = driver.findElement(By.xpath("//tr/td[@data-value='" + targetFileName + "']"));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileRow wurde nicht gefunden");
             return;
         }
@@ -90,6 +97,7 @@ public class Tests {
         try {
             fileCreationDateElement = driver.findElement(By.xpath("//td[contains(@data-value, '" + pilot_file.getText() + "')]/following-sibling::td[@class='detailsColumn'][2]"));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileCreationDateElement wurde nicht gefunden");
             driver.quit();
             return;
@@ -112,7 +120,7 @@ public class Tests {
             pilot_file = driver.findElement(By.linkText(targetFileName));
             //ScreenshotHelper.takeScreenshot(driver, testName + " ");
         } catch (NoSuchElementException e) {
-            ScreenshotHelper.takeScreenshot(driver, testName + " ");
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("File " + targetFileName + " wurde nicht gefunden");
             return;
         }
@@ -121,7 +129,7 @@ public class Tests {
         try {
             fileRow = driver.findElement(By.xpath("//tr/td[@data-value='" + targetFileName + "']"));
         } catch (NoSuchElementException e) {
-
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileRow wurde nicht gefunden");
             return;
         }
@@ -131,7 +139,7 @@ public class Tests {
             fileCreationDateElement = driver.findElement(By.xpath("//td[contains(@data-value, '" + pilot_file.getText() + "')]/following-sibling::td[@class='detailsColumn'][2]"));
         } catch (NoSuchElementException e) {
 
-            ScreenshotHelper.takeScreenshot(driver, testName + " ");
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileCreationDateElement wurde nicht gefunden");
             return;
         }
@@ -142,7 +150,7 @@ public class Tests {
     }
 
     @Test
-    public void testFileCreationDateFile4() throws InterruptedException {
+    public void testFileCreationDateFile4()  {
         //driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String testName = "testFileCreationDateFile4";
         String targetFileName = "TestFenster2.txt";
@@ -152,6 +160,7 @@ public class Tests {
         try {
             pilot_file = driver.findElement(By.linkText(targetFileName));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("File " + targetFileName + " wurde nicht gefunden");
             return;
         }
@@ -168,6 +177,7 @@ public class Tests {
         try {
             fileCreationDateElement = driver.findElement(By.xpath("//td[contains(@data-value, '" + pilot_file.getText() + "')]/following-sibling::td[@class='detailsColumn'][2]"));
         } catch (NoSuchElementException e) {
+            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " ");
             fail("fileCreationDateElement wurde nicht gefunden");
             driver.quit();
             return;
