@@ -14,7 +14,7 @@ public class WebDriverManager {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            // Инициализация драйвера (в данном случае ChromeDriver)
+            // Initialisierung des Drivers (in diesem Fall ChromeDriver)
             System.setProperty(ConfProperties.getProperty("chromedriver_route"), ConfProperties.getProperty("chromedriver"));
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

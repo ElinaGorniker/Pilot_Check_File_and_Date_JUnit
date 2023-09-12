@@ -7,13 +7,13 @@ public class ConfProperties {
     protected static Properties PROPERTIES;
     static {
         try {
-            //указание пути до файла с настройками
+            //Pfad zur Einstellungsdatei
             fileInputStream = new FileInputStream("src/main/resources/conf.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {
             e.printStackTrace();
-            //обработка возможного исключения (нет файла и т.п.)
+            //Behandlung einer möglichen Ausnahme (keine Datei usw.)
         } finally {
             if (fileInputStream != null)
                 try {
@@ -21,7 +21,7 @@ public class ConfProperties {
                 } catch (IOException e) {
                     e.printStackTrace(); } } }
     /**
-     * метод для возврата строки со значением из файла с настройками
+     * Methode zum Zurückgeben einer File mit einem Wert aus einer Einstellungsdatei
      */
     public static String getProperty(String key) {
         return PROPERTIES.getProperty(key); } }

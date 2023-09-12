@@ -10,17 +10,17 @@ public class ScreenshotHelper {
 
     public static void takeScreenshot(WebDriver driver, String screenshotName) {
         try {
-            // Приведение WebDriver к TakesScreenshot
+            // WebDriver zu TakesScreenshot bringen
             TakesScreenshot ts = (TakesScreenshot) driver;
 
-            // Создание скриншота как файла
+            // Einen Screenshot als File erstellen
             File source = ts.getScreenshotAs(OutputType.FILE);
 
-            // Копирование скриншота в указанное место
+            // Kopieren des Screenshots an den angegebenen Speicherort
             FileUtils.copyFile(source, new File("src/main/resources/Screenshots/" +screenshotName + ".png"));
-            System.out.println("Скриншот создан" + screenshotName);
+            System.out.println("Screenshot wurde erstellt" + screenshotName);
         } catch (Exception e) {
-            System.out.println("Не удалось создать скриншот: " + e.getMessage());
+            System.out.println("Der Screenshot konnte nicht erstellt werden: " + e.getMessage());
         }
     }
 }

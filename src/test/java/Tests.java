@@ -2,11 +2,8 @@ import org.example.ConfProperties;
 import org.example.ScreenshotHelper;
 import org.example.WebDriverManager;
 import org.junit.AfterClass;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +27,7 @@ public class Tests {
 
 
     @Test
-    public void testFileCreationDateFile1()  {
+    public void testFileCreationDateFile1() {
         String testName = "testFileCreationDateFile1";
         // driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String targetFileName = "TestFenster1.txt";
@@ -67,8 +64,9 @@ public class Tests {
         assertNotNull(fileCreationDate);
         assertEquals(expectedCreationDate, fileCreationDate);
     }
+
     @Test
-    public void testFileCreationDateFile2()  {
+    public void testFileCreationDateFile2() {
         //driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String testName = "testFileCreationDateFile2";
 
@@ -150,7 +148,7 @@ public class Tests {
     }
 
     @Test
-    public void testFileCreationDateFile4()  {
+    public void testFileCreationDateFile4() {
         //driver.get("C:\\Users\\e.gorniker\\Documents\\Pilot_autotest");
         String testName = "testFileCreationDateFile4";
         String targetFileName = "TestFenster2.txt";
