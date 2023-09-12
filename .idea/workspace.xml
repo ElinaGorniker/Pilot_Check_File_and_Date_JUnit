@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Parameterized Test&#10;Screenshots with Timestamp">
+    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Refactoring&#10;Kommentare DE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WebDriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile1 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile2 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile3 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile4 .png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/e.gorniker/IdeaProjects/Pilot_Check_File_and_Date_JUnit/src/main/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/e.gorniker/IdeaProjects/Pilot_Check_File_and_Date_JUnit/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="TestRun" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\e.gorniker\IdeaProjects\Pilot_Check_File_and_Date_JUnit\src\main\resources" />
     </key>
@@ -85,8 +88,8 @@
     </configuration>
     <configuration name="TestParametr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnit_Pilot" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestParametr" />
+      <option name="PACKAGE_NAME" value="TestRun" />
+      <option name="MAIN_CLASS_NAME" value="TestRun.TestParametr" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -130,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694508826168</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring&#10;Kommentare DE">
+      <created>1694518536552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694518536552</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +157,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="4 Tests&#10;Screenshots" />
     <MESSAGE value="Parameterized Test&#10;Screenshots with Timestamp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parameterized Test&#10;Screenshots with Timestamp" />
+    <MESSAGE value="Refactoring&#10;Kommentare DE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring&#10;Kommentare DE" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
