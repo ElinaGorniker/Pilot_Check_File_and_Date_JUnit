@@ -1,6 +1,6 @@
-import org.example.ConfProperties;
-import org.example.ScreenshotHelper;
-import org.example.WebDriverManager;
+import Utilites.ConfProperties;
+import Utilites.ScreenshotHelper;
+import Utilites.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class Tests {
+public class TestFile {
 
     private static WebDriver driver;
 

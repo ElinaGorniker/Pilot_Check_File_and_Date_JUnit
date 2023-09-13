@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Refactoring&#10;Kommentare DE">
+    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Login tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile1 .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile2 .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile3 .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshots/testFileCreationDateFile4 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/ConfProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/ScreenshotHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Assertations/CheckElementAbsence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assertations/CheckElementAbsence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694518536552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login tests">
+      <created>1694525845019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694525845019</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,7 +169,8 @@
     <MESSAGE value="4 Tests&#10;Screenshots" />
     <MESSAGE value="Parameterized Test&#10;Screenshots with Timestamp" />
     <MESSAGE value="Refactoring&#10;Kommentare DE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring&#10;Kommentare DE" />
+    <MESSAGE value="Login tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

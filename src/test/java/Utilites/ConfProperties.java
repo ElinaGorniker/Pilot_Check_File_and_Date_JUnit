@@ -1,10 +1,13 @@
-package org.example;
+package Utilites;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 public class ConfProperties {
     protected static FileInputStream fileInputStream;
     protected static Properties PROPERTIES;
+
     static {
         try {
             //Pfad zur Einstellungsdatei
@@ -19,9 +22,15 @@ public class ConfProperties {
                 try {
                     fileInputStream.close();
                 } catch (IOException e) {
-                    e.printStackTrace(); } } }
+                    e.printStackTrace();
+                }
+        }
+    }
+
     /**
      * Methode zum Zurückgeben einer File mit einem Wert aus einer Einstellungsdatei
      */
     public static String getProperty(String key) {
-        return PROPERTIES.getProperty(key); } }
+        return PROPERTIES.getProperty(key);
+    }
+}

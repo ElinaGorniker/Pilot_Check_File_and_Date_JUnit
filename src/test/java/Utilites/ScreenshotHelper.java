@@ -1,10 +1,11 @@
-package org.example;
+package Utilites;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 import java.io.File;
-import org.apache.commons.io.FileUtils;
 
 public class ScreenshotHelper {
 
@@ -17,8 +18,8 @@ public class ScreenshotHelper {
             File source = ts.getScreenshotAs(OutputType.FILE);
 
             // Kopieren des Screenshots an den angegebenen Speicherort
-            FileUtils.copyFile(source, new File("src/main/resources/Screenshots/" +screenshotName + ".png"));
-            System.out.println("Screenshot wurde erstellt " +  screenshotName + ".png");
+            FileUtils.copyFile(source, new File("src/main/resources/Screenshots/" + screenshotName + ".png"));
+            System.out.println("Screenshot wurde erstellt " + screenshotName + ".png");
         } catch (Exception e) {
             System.out.println("Der Screenshot konnte nicht erstellt werden: " + e.getMessage());
         }
