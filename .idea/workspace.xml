@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Login tests">
+    <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/ConfProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ScreenshotHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/ScreenshotHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilites/WebDriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Assertations/CheckElementAbsence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Assertations/CheckElementAbsence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694525845019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Packages">
+      <created>1694588063804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694588063804</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +170,8 @@
     <MESSAGE value="Parameterized Test&#10;Screenshots with Timestamp" />
     <MESSAGE value="Refactoring&#10;Kommentare DE" />
     <MESSAGE value="Login tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login tests" />
+    <MESSAGE value="Packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

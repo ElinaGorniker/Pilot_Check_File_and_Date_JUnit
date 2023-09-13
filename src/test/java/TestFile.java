@@ -188,8 +188,8 @@ public class TestFile {
 
 
     @AfterClass
-    public void tearDown() {
-        this.driver.quit();
+    public static void tearDown() {
+        driver.quit();
     }
 }
 
