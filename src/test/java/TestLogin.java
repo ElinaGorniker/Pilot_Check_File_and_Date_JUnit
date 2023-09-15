@@ -32,7 +32,7 @@ public class TestLogin {
     }
 
     @ParameterizedTest
-    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginFile")
+    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginData")
     @DisplayName("Test Login")
     public void testLoginPositive(String targetLoginName, String targetPasswordName) {
 
@@ -56,7 +56,7 @@ public class TestLogin {
     }
 
     @ParameterizedTest
-    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginFile")
+    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginData")
     @DisplayName("Test Error Massage wird nicht angezeigt")
     public void testLoginNegative(String targetLoginName, String targetPasswordName) {
 

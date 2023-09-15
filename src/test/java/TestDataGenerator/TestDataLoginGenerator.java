@@ -12,14 +12,9 @@ public class TestDataLoginGenerator {
     @MethodSource("testLoginData")
     public void testFileCreationDate(String targetLoginName, String targetPasswordName) {
 
-        System.out.println("Target File Name: " + targetLoginName);
-        System.out.println("Expected Creation Date: " + targetPasswordName);
-
-
     }
 
-
-    static Stream<Arguments> testLoginFile() {
+    static Stream<Arguments> testLoginData() {
         return Stream.of(
                 Arguments.of("standard_user", "secret_sauce"),
                 Arguments.of("locked_out_user", "secret_sauce"),

@@ -43,15 +43,6 @@ public class TestParameter {
             return;
         }
 
-        WebElement fileRow;
-        try {
-            fileRow = driver.findElement(By.xpath("//tr/td[@data-value='" + targetFileName + "']"));
-        } catch (NoSuchElementException e) {
-            ScreenshotHelper.takeScreenshot(driver, "Error_" + testName + " " + timestamp);
-            Assertions.fail("fileRow wurde nicht gefunden");
-            return;
-        }
-
         WebElement fileCreationDateElement;
         try {
             fileCreationDateElement = driver.findElement(By.xpath("//td[contains(@data-value, '" + pilot_file.getText() + "')]/following-sibling::td[@class='detailsColumn'][2]"));
@@ -69,8 +60,8 @@ public class TestParameter {
     }
 
     @AfterClass
-    public void tearDown() {
-        this.driver.quit();
+    public static void tearDown() {
+        driver.quit();
 
 
     }

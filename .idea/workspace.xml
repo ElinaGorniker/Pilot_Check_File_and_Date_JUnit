@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9c16d9-19b6-4bb6-a698-a2942a0f9f83" name="Changes" comment="Packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataFileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataGenerator/TestDataLoginGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestParameter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Refactoring" />
+        <entry key="$PROJECT_DIR$" value="Presentation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +77,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AllureTestConfig">
+  <component name="RunManager">
     <configuration name="AllureTestConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnit_Pilot" />
       <option name="PACKAGE_NAME" value="" />
@@ -156,7 +162,28 @@
       <option name="project" value="LOCAL" />
       <updated>1694596610799</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Packages">
+      <created>1694764693183</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694764693183</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Packages">
+      <created>1694764772446</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694764772446</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Packages">
+      <created>1694764926848</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694764926848</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -31,7 +31,7 @@ public class TestList {
     }
 
     @ParameterizedTest
-    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginFile")
+    @MethodSource("TestDataGenerator.TestDataLoginGenerator#testLoginData")
     @DisplayName("Test There is Line in the list")
     public void testLinePositive(String targetLoginName, String targetPasswordName) throws InterruptedException {
 
